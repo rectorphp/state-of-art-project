@@ -1,9 +1,17 @@
 {
-  "name": "project/name",
-  "license": "proprietary",
-  "require": {
-    "psr-4": {
-      "App\\": "src"
+    "name": "project/name",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests"
+        }
     }
-  }
 }
